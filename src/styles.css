@@ -1,0 +1,40 @@
+body {
+  background-image: url(https://images.pexels.com/photos/1054220/pexels-photo-1054220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top {
+  display: inline;
+  opacity: 0.5;
+}
+h2 {
+  color: aliceblue;
+}
+.container-fluid {
+  margin: 0 10px 50px 10px;
+  padding: 50px;
+}
+.cond {
+  padding-left: 12%;
+}
+table {
+  width: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline;
+}
+td {
+  color: rgb(58, 86, 122);
+}
+.fcast {
+  text-align: center;
+}
+.btns {
+  text-align: center;
+}
+.btn {
+  margin: 10px 10px 10px 10px;
+}

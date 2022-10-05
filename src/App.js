@@ -22,24 +22,26 @@ export default function App() {
   function handleClick() {
     setFile((prevfile) => {
       return {
-        date: data.query.results.channel.item.forecast[file.idx].date,
-        day: data.query.results.channel.item.forecast[file.idx].day,
-        high: data.query.results.channel.item.forecast[file.idx].high,
-        low: data.query.results.channel.item.forecast[file.idx].low,
-        text: data.query.results.channel.item.forecast[file.idx].text,
         idx: prevfile.idx + 1
+        date: data.query.results.channel.item.forecast[file.idx +1 ].date,
+        day: data.query.results.channel.item.forecast[file.idx +1 ].day,
+        high: data.query.results.channel.item.forecast[file.idx + 1 ].high,
+        low: data.query.results.channel.item.forecast[file.idx + 1 ].low,
+        text: data.query.results.channel.item.forecast[file.idx + 1].text,
+        
       };
     });
   }
   function handleClick1() {
     setFile((prevfile) => {
       return {
-        date: data.query.results.channel.item.forecast[file.idx].date,
-        day: data.query.results.channel.item.forecast[file.idx].day,
-        high: data.query.results.channel.item.forecast[file.idx].high,
-        low: data.query.results.channel.item.forecast[file.idx].low,
-        text: data.query.results.channel.item.forecast[file.idx].text,
-        idx: prevfile.idx - 1
+          idx: prevfile.idx - 1
+        date: data.query.results.channel.item.forecast[file.idx -1 ].date,
+        day: data.query.results.channel.item.forecast[file.idx -1 ].day,
+        high: data.query.results.channel.item.forecast[file.idx -1 ].high,
+        low: data.query.results.channel.item.forecast[file.idx -1 ].low,
+        text: data.query.results.channel.item.forecast[file.idx - 1].text,
+      
       };
     });
   }

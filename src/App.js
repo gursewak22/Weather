@@ -22,7 +22,7 @@ export default function App() {
   function handleClick() {
     setFile((prevfile) => {
       return {
-        idx: prevfile.idx + 1
+        idx: prevfile.idx + 1,
         date: data.query.results.channel.item.forecast[file.idx +1 ].date,
         day: data.query.results.channel.item.forecast[file.idx +1 ].day,
         high: data.query.results.channel.item.forecast[file.idx + 1 ].high,
@@ -35,7 +35,7 @@ export default function App() {
   function handleClick1() {
     setFile((prevfile) => {
       return {
-          idx: prevfile.idx - 1
+          idx: prevfile.idx - 1,
         date: data.query.results.channel.item.forecast[file.idx -1 ].date,
         day: data.query.results.channel.item.forecast[file.idx -1 ].day,
         high: data.query.results.channel.item.forecast[file.idx -1 ].high,
